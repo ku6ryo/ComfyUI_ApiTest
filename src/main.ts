@@ -11,6 +11,7 @@ const WORKFLOW_PATH = path.join(__dirname, "../workflow_api.json");
 async function main() {
     const workflow = JSON.parse(fs.readFileSync(WORKFLOW_PATH).toString());
     console.log(workflow)
+    workflow["3"]["inputs"]["seed"] = Math.floor(Math.random() * 1000000000);
     try {
         const res = await axios.post(API_URL, {
             prompt: workflow

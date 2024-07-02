@@ -1,11 +1,11 @@
 {
   "3": {
     "inputs": {
-      "seed": 2,
+      "seed": 191386297525682,
       "steps": 20,
-      "cfg": 7,
-      "sampler_name": "dpmpp_2m",
-      "scheduler": "karras",
+      "cfg": 8,
+      "sampler_name": "euler",
+      "scheduler": "normal",
       "denoise": 1,
       "model": [
         "4",
@@ -31,7 +31,7 @@
   },
   "4": {
     "inputs": {
-      "ckpt_name": "rainponyxl_v10.safetensors"
+      "ckpt_name": "prefectPonyXL_v10.safetensors"
     },
     "class_type": "CheckpointLoaderSimple",
     "_meta": {
@@ -41,7 +41,7 @@
   "5": {
     "inputs": {
       "width": 512,
-      "height": 768,
+      "height": 512,
       "batch_size": 1
     },
     "class_type": "EmptyLatentImage",
@@ -51,7 +51,7 @@
   },
   "6": {
     "inputs": {
-      "text": "1 girl, dancing, arms up, puff sleeves blouse, midi skirt, smiling, masterpiece, best quality, flat background",
+      "text": "beautiful scenery nature glass bottle landscape, , purple galaxy bottle,",
       "clip": [
         "4",
         1
@@ -64,7 +64,7 @@
   },
   "7": {
     "inputs": {
-      "text": "text, watermark, (worst quality, low quality:1.4), grayscale, monochrome",
+      "text": "text, watermark",
       "clip": [
         "4",
         1
@@ -93,7 +93,7 @@
   },
   "9": {
     "inputs": {
-      "filename_prefix": "240703/",
+      "filename_prefix": "ComfyUI",
       "images": [
         "8",
         0
